@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+    
+    <div class="header-left">
+        <h2><pre>Registre momentos com
+amigos, familia e conheça 
+            amigos</pre></h2>
+    </div>
+
+    <div class="header-center">
+        <div >
+        <h1>MARGAT</h1>
+        </div>
+        <p>Sua solução começa aqui</p>
+        <a href="#cta" class="btn">Saiba Mais</a>
+        
+    </div>
+
+    <!-- Direita -->
+    <div class="header-right">
+        <img src="C:\Users\Unopar Lab-5\Documents\Projeto interface\TheOtherNigga\image\Capturar.PNG" alt="Imagem">
+    </div>
+
+</header>
+
+<section class="features">
+    <div class="feature">
+        <h2>Amigos</h2>
+        <p>Pessoas que estão ou estaram ao seu redor.</p>
+    </div>
+    <div class="feature">
+        <h2>Lugares</h2>
+        <p>Paisagens, Cidades e Restaurantes.</p>
+    </div>
+    <div class="feature">
+        <h2>Entreterimento</h2>
+        <p>Interface simples e intuitiva.</p>
+    </div>
+</section>
+
+<section id="cta" class="cta">
+    <h2>Comece Agora</h2>
+    <p>Cadastre-se e aproveite todos os benefícios.</p>
+    <!-- Botão -->
+<a href="#" class="btn" onclick="abrirModal()">Cadastrar</a>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="fechar" onclick="fecharModal()">&times;</span>
+        <h2>Cadastro</h2>
+        <form>
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="Email" required>
+            <input type="Senha" placeholder="Senha" required>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </div>
+</div>
+
+<script>
+function abrirModal() {
+    document.getElementById("modal").style.display = "flex";
+}
+
+function fecharModal() {
+    document.getElementById("modal").style.display = "none";
+}
+</script>
+</section>
+
+<footer>
+    <p>© 2026 Meu sitye 2026 The bininguin of de yer. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
